@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card max-w-[18rem] lg:max-w-[17rem]" role="main">
+      <aside class="mb-4 cursor-pointer card__aside">
+        <figure class="relative card__figure">
+          <img
+            src="../images/image-equilibrium.jpg"
+            alt="equilibrium"
+            class="bg-center bg-cover rounded-md card__image"
+          />
+          <div
+            class="
+              absolute
+              inset-0
+              w-full
+              h-full
+              transition
+              duration-500
+              rounded-md
+              opacity-0
+              ease
+              bg-primary-cyan
+            "
+          ></div>
+          <img
+            class="
+              absolute
+              w-10
+              transition
+              duration-500
+              transform
+              -translate-x-1/2
+              opacity-0
+              card__eye-icon
+              ease
+              top-1/2
+              left-1/2
+            "
+            src="../images/icon-view.svg"
+            alt="icon-view"
+          />
+        </figure>
+      </aside>
+
+      <header class="mb-2 card__header">
+        <a
+          href="#"
+          class="
+            text-xl
+            font-semibold
+            transition
+            duration-500
+            ease
+            lg:text-lg
+            card__title
+            text-neutral-white
+            hover:text-primary-cyan
+          "
+        >
+          Equilibrium #3429
+        </a>
+      </header>
+
+      <div class="card__body text-primary">
+        <p
+          class="
+            mb-4
+            card__copy
+            text-sm
+            lg:text-[15px]
+            transition-all
+            duration-150
+            ease-in-out
+          "
+        >
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div
+          class="
+            flex
+            justify-between
+            pb-3
+            border-b border-neutral-line
+            card__details
+          "
+        >
+          <div class="flex items-center justify-center card__details-item">
+            <span
+              class="
+                mr-2
+                transition
+                duration-500
+                ease
+                lg:mr-1
+                card__details-icon
+              "
+            >
+              <img
+                class="lg:w-2"
+                src="../images/icon-ethereum.svg"
+                alt="icon-ethereum"
+              />
+            </span>
+            <p
+              class="
+                text-sm
+                font-semibold
+                card__details-value
+                text-primary-cyan
+                lg:text-xs
+              "
+            >
+              0.041 ETH
+            </p>
+          </div>
+          <div class="flex items-center justify-center card__details-item">
+            <span
+              class="
+                mr-2
+                transition
+                duration-500
+                ease
+                card__details-icon
+                lg:mr-1
+              "
+            >
+              <img
+                class="lg:w-3"
+                src="../images/icon-clock.svg"
+                alt="icon-clock"
+              />
+            </span>
+            <p class="text-sm card__details-value lg:text-xs">3 days left</p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-3 mb-1 card__footer">
+        <div
+          class="
+            flex
+            items-center
+            transition-all
+            duration-500
+            ease
+            card__attribution
+            text-primary
+          "
+        >
+          <span
+            class="mr-4 border rounded-full lg:mr-3 card__attribution-avatar"
+          >
+            <img
+              class="w-6 h-6"
+              src="../images/image-avatar.png"
+              alt="avatar"
+            />
+          </span>
+          <span class="text-sm card__attribution-text lg:text-xs">
+            Creation of
+            <a
+              class="
+                transition-colors
+                duration-500
+                ease
+                text-neutral-white
+                hover:text-primary-cyan
+              "
+              href="#"
+            >
+              Jules Wyvern
+            </a>
+          </span>
+        </div>
+      </footer>
+    </article>
+
+    <div class="mt-20 attribution text-neutral-white">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">RiiDesign</a>.
+    </div>
+  </body>
+</html>

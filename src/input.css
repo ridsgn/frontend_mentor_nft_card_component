@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply antialiased font-outfit;
+}
+
+body {
+  @apply flex flex-col items-center justify-center min-h-screen my-10 lg:my-0 bg-neutral;
+}
+
+.card {
+  @apply flex flex-col justify-center p-5 transition-all duration-200 ease-in-out shadow-lg lg:p-4 rounded-2xl bg-neutral-card;
+}
+
+.card__figure:hover div {
+  @apply opacity-40;
+}
+
+.card__figure:hover .card__eye-icon {
+  @apply -translate-y-1/2 opacity-100;
+}
